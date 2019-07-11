@@ -37,7 +37,7 @@ function roofShape() {
 }
 
 function buildingShape() {
-  modal.style.display = "block";
+  modal.style("display") = "block";
   document.getElementById("modalText").innerHTML =
     "The main part of the building is a rectangular prism";
   document.getElementById("modalImage").src = popUpImages[1];
@@ -97,7 +97,7 @@ const questions = [
 
 
 function makeQuiz(){
-  document.getElementById("quizContent").style.display = "block"; 
+  document.getElementById("quizContent").style.display = "block";
   document.getElementById("q1").innerHTML = questions[0].question;
   document.getElementById("1a1").innerHTML = questions[0].answers[0].a;
 }
@@ -159,5 +159,3 @@ function thanks() {
   alert(`Thank you ${userName}.  I will get back to you shortly`)
   console.log(userName);
 }
-
-
